@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=0, initial-scale=1.0">
+    <title>ferma</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/slick.css">
+    <link rel="stylesheet" href="/css/fullpage.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container">
+            <div class="header__inner">
+                <div class="header__inner-subblock header__inner-left">
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <div class="dropdown">
+                                <button onclick="myFunction()" class="dropbtn menu__icon">
+                                    <span class="menu__icon-line"></span>
+                                    <span class="menu__icon-line"></span>
+                                </button>
+                                <button onclick="myFunction()" class="dropbtn">меню</button>
+                                <div id="myDropdown" class="dropdown-content">
+                                    <a href="#">Главная</a>
+                                    <a href="#">О Нас</a>
+                                    <a href="#">Контакты</a>
+                                </div>
+                            </div>
+                        </ul>
+                    </nav>
+                    <div class="header__contacts">
+                        <a class="contacts" href="">Контакты</a>
+                    </div>
+                </div>
+                <a class="logo" href="">
+                    <img class="logo__img" src="images/main/logo.svg">
+                </a>
+                <div class="header__inner-subblock header__inner-right">
+                    <a class="number" href="">
+                    +7 929 574 58 21
+                </a>
+                    <a class="other" href="">
+                    Подробнее
+                </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <button id="moveDown"></button>
+    <div id="fullpage">
+        <div class="section pageOne page">
+            <div class="page__titleblock">
+                <h1 class="page__title">
+                    У нас есть <br> где разгуляться
+                </h1>
+                <h2 class="page__subtitle">
+                    Территория El Rancho насчитывает 300 га.
+                </h2>
+            </div>
+        </div>
+        <div class="section pageTwo page">
+            <div class="page__titleblock">
+                <h1 class="page__title">
+                    УНИКАЛЬНАЯ ПРИРОДНАЯ ЗОНА
+                </h1>
+                <h2 class="page__subtitle">
+                    В наши владения включена территория Нерль-Волжской гидроэлектростанции — источника выработки зелёной энергии с давней историей.
+                </h2>
+            </div>
+        </div>
+        <div class="section pageThree page">
+            <div class="page__titleblock">
+                <h1 class="page__title">
+                    излюбленная локация
+                </h1>
+                <h2 class="page__subtitle">
+                    Прогулки по лесу, лугам и пастбищам, исследование реки Нерль, наслаждение природой.
+                </h2>
+            </div>
+        </div>
+        <div class="section pageFour page">
+            <div class="page__titleblock">
+                <h1 class="page__title">
+                    РУССКАЯ <br> БАНЯ
+                </h1>
+                <h2 class="page__subtitle">
+                    В нашем банном комплексе найдётся всё <br> для расслабления и правильного отдыха.
+                </h2>
+            </div>
+        </div>
+        <div class="section pageFive">
+            <div class="pageFive__content">
+                <div class="pageFive__item">
+                    <h3 class="pageFive__item-title">
+                        5 897
+                    </h3>
+                    <p class="pageFive__item-text">
+                        довольных клиентов
+                    </p>
+                </div>
+                <div class="pageFive__item">
+                    <h3 class="pageFive__item-title">
+                        2
+                    </h3>
+                    <p class="pageFive__item-text">
+                        коттеджа
+                    </p>
+                </div>
+                <div class="pageFive__item">
+                    <h3 class="pageFive__item-title">
+                        9
+                    </h3>
+                    <p class="pageFive__item-text">
+                        номеров
+                    </p>
+                </div>
+                <div class="pageFive__item">
+                    <h3 class="pageFive__item-title">
+                        300 га
+                    </h3>
+                    <p class="pageFive__item-text">
+                        площадь комплекса
+                    </p>
+                </div>
+            </div>
+            <div class="pageFive__coments">
+                <div class="slide" data-anchor="slide1">
+                    <div class="pageFive__coment">
+                        <h4 class="pageFive__coment-title">
+                            Илья Ушаков
+                        </h4>
+                        <h5 class="pageFive__coment-subtitle">
+                            На День рождения устроил жене сюрприз - привёз на настоящую ферму!
+                        </h5>
+                        <p class="pageFive__coment-text">
+                            Общение с животными, свежий воздух, потрясающий банный комплекс - здесь есть всё, чтобы порадовать любимого человека. Спасибо!
+                        </p>
+                    </div>
+                </div>
+                <div class="slide" data-anchor="slide2">
+                    <div class="pageFive__coment">
+                        <h4 class="pageFive__coment-title">
+                            Илья Ушаков
+                        </h4>
+                        <h5 class="pageFive__coment-subtitle">
+                            На День рождения устроил жене сюрприз - привёз на настоящую ферму!
+                        </h5>
+                        <p class="pageFive__coment-text">
+                            Общение с животными, свежий воздух, потрясающий банный комплекс - здесь есть всё, чтобы порадовать любимого человека. Спасибо!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <footer class="footerIn">
+                <a class="footer__link" href="https://lrancho.ru/">https://lrancho.ru/</a>
+                <p class="footer__text">
+                    © 2014 - 2020 Загородный клуб в Подмосковье El Rancho
+                </p>
+                <a class="footer__politcs" href="">Политика конфиденциальности</a>
+            </footer>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="/js/slick.min.js"></script>
+    <script type="text/javascript" src="js/fullpage.js"></script>
+    <script src="js/easings.min.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+
+</html>

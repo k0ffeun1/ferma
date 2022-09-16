@@ -1,0 +1,353 @@
+@font-face {
+    font-family: 'FuturaReg';
+    src: url('../fonts/FuturaPT-Book.ttf');
+}
+
+@font-face {
+    font-family: 'FuturaBold';
+    src: url(../fonts/FuturaPT-Bold.ttf)
+}
+
+@font-face {
+    font-family: 'Russo';
+    src: url('../fonts/RussoOne-Regular.ttf');
+}
+
+body {
+    height: 4000px;
+}
+
+.container {
+    max-width: 1750px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.dropbtn {
+    padding: 16px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: transparent;
+}
+
+.dropdown {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.dropdown:hover {
+    .menu__icon-line {
+        background-color: #6d773d;
+        transition: 0.3s;
+    }
+    .dropbtn {
+        color: #AEB979;
+        transition: 0.3s;
+    }
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.show {
+    display: block;
+}
+
+.header {
+    position: fixed;
+    background-color: transparent;
+    width: 100%;
+    z-index: 10;
+    a {
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+    a:hover {
+        color: #AEB979;
+        transition: 0.3s;
+    }
+}
+
+.header__container {
+    padding: 36px 65px;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'FuturaReg';
+    font-size: 20px;
+}
+
+.header__inner-subblock {
+    display: flex;
+    align-items: center;
+    flex-basis: 33%;
+}
+
+.menu {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.menu__icon {
+    width: 86px;
+    height: 46px;
+    position: relative;
+    cursor: pointer;
+    padding: 16px;
+}
+
+.menu__icon:hover {
+    .menu__icon-line {
+        background-color: #6d773d;
+        transition: 0.3s;
+    }
+}
+
+.menu__icon-line {
+    background-color: #AEB979;
+    width: 46px;
+    height: 3px;
+    position: absolute;
+}
+
+.menu__icon-line:first-child {
+    top: 35%;
+}
+
+.menu__icon-line:last-child {
+    top: 65%;
+}
+
+.menu::before {
+    position: absolute;
+    content: '';
+    background-color: #AEB979;
+    width: 46px;
+    height: 3px;
+    top: 45%;
+    transform: translateY(-50%);
+    left: 0;
+    cursor: pointer;
+    display: none;
+}
+
+.menu::after {
+    position: absolute;
+    content: '';
+    background-color: #AEB979;
+    width: 46px;
+    height: 3px;
+    top: 55%;
+    transform: translateY(-50%);
+    left: 0;
+    cursor: pointer;
+    display: none;
+}
+
+.menu::after:hover {
+    background-color: white;
+}
+
+.menu__list {}
+
+.dropdown {}
+
+.dropbtn {}
+
+.dropdown-content {}
+
+.header__contacts {}
+
+.contacts {
+    margin-left: 90px;
+}
+
+.logo {
+    flex-basis: 33%;
+}
+
+.logo__img {
+    margin: 0 auto;
+}
+
+.header__inner-right {
+    justify-content: end;
+}
+
+.number {}
+
+.other {
+    margin-left: 90px;
+}
+
+// ======================= MAIN ========================
+.pageOne {
+    background-image: url(../images/main/main-1.jpg);
+    background-size: cover;
+}
+
+.pageTwo {
+    background-image: url(../images/main/main-2.jpg);
+    background-size: cover;
+}
+
+.pageThree {
+    background-image: url(../images/main/main-3.jpg);
+    background-size: cover;
+}
+
+.pageFour {
+    background-image: url(../images/main/main-4.jpg);
+    background-size: cover;
+}
+
+.pageFive {
+    background-image: url(../images/main/main-5.jpg);
+    background-size: cover;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+}
+
+.page__titleblock {
+    color: white;
+    max-width: 1182px;
+}
+
+.page__title {
+    font-family: 'Russo';
+    text-transform: uppercase;
+    font-size: 100px;
+    line-height: 110%;
+    text-align: center;
+    font-weight: 400;
+}
+
+.page__subtitle {
+    font-family: 'FuturaReg';
+    font-size: 44px;
+    line-height: 56px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.pageFive {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.pageFive__content {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-top: 250px;
+    margin-bottom: 5vw;
+}
+
+.pageFive__item {}
+
+.pageFive__item-title {
+    font-family: 'Russo';
+    text-transform: uppercase;
+    font-size: 80px;
+    line-height: 110%;
+    text-align: center;
+    font-weight: 400;
+    color: white;
+}
+
+.pageFive__item-text {
+    font-family: 'FuturaReg';
+    font-size: 44px;
+    line-height: 56px;
+    text-align: center;
+    font-weight: 400;
+    color: #AEB979;
+}
+
+.pageFive__coment {
+    background-color: white;
+    max-width: 878px;
+    margin: 0 auto;
+    position: relative;
+    padding: 38px 116px;
+    border-radius: 28px;
+    h4,
+    h5,
+    h6,
+    p {
+        margin: 0;
+    }
+}
+
+.pageFive__coment-title {
+    font-size: 44px;
+    line-height: 56px;
+    text-align: center;
+    font-weight: 700;
+    font-family: 'FuturaBold';
+}
+
+.pageFive__coment-subtitle {
+    font-size: 32px;
+    line-height: 41px;
+    font-weight: 700;
+    font-family: 'FuturaBold';
+}
+
+.pageFive__coment-text {
+    font-family: 'FuturaReg';
+    font-size: 32px;
+    line-height: 41px;
+    font-weight: 400;
+}
+
+.footerIn {
+    display: flex;
+    justify-content: space-between;
+    background-color: #AEB979;
+    padding: 8px 64px;
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    z-index: 999;
+    a {
+        color: black;
+    }
+    font-family: 'FuturaReg';
+}
+
+.footer__link {}
+
+.footer__text {}
+
+.footer__politcs {}
